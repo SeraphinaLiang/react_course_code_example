@@ -62,6 +62,16 @@
 														params: {}
 														path: "/about"
 														url: "/about"
+			
+		1. replace跳转+携带params参数
+            this.props.history.replace(`/home/message/detail/${id}/${title}`)
+            
+            2. replace跳转+携带search参数
+            this.props.history.replace(`/home/message/detail?id=${id}&title=${title}`)
+            
+            3. replace跳转+携带state参数
+            this.props.history.replace(`/home/message/detail`,{id,title})
+			
 
 ## 五、NavLink与封装NavLink
 				1.NavLink可以实现路由链接的高亮，通过activeClassName指定样式名
